@@ -1,4 +1,5 @@
 <?php
+
 $date =  date('Y-m-d', time());
 echo "The value of \$date: ".$date."<br>";
 
@@ -92,10 +93,36 @@ echo "<br>";
 
 for ($i=0, $size = count($year); $i < $size; $i++)
 {
+	// switch($year[$i])
+	// {
+	// 	case 2012:
+	// 		echo "False ";
+	// 		break;
+
+	// 	case 396:
+	// 		echo "False ";
+	// 		break; 
+
+	// 	case 300:
+	// 		echo "False ";
+	// 		break;
+
+	// 	case 2000:
+	// 		echo "True ";
+	// 		break;
+
+	// 	case 1100:
+	// 		echo "False ";
+	// 		break;
+
+	// 	case 1089:
+	// 		echo "False ";
+	// 		break;
+	// }
 	if ($year[$i]%400 == 0)
-		echo "$year[$i] is a leap year"."<br>";
+		echo "$year[$i] is a leap year".", ";
 	else
-		echo "$year[$i] is not a leap year"."<br>";
+		echo "$year[$i] is not a leap year".", ";
 }
 
 ?>
